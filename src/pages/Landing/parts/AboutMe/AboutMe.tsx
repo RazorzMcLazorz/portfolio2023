@@ -11,8 +11,7 @@ export default function AboutMe() {
 
       <div className={styles.aboutMeAdjustment}>
         <div className={styles.contactMePart}>
-          {/* largeCard */}
-          <div className={styles.cardComponent}>
+          <div className={`${styles.cardComponent} ${styles.largeCard}`}>
             <p className={styles.cardDetails}>
               Lorem ipsum doloar sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Dictum fusce ut placerat orci nulla

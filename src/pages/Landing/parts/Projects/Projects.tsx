@@ -10,8 +10,7 @@ export default function Projects() {
       <h2 className={styles.sectionTitle}>Projects</h2>
 
       <div className={styles.allCards}>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardProjectStyle}>
             <div className={styles.cardDetails}>
               <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
@@ -33,8 +32,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardProjectStyle}>
             <div className={styles.cardDetails}>
               <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
@@ -56,8 +54,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardProjectStyle}>
             <div className={styles.cardDetails}>
               <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
@@ -79,8 +76,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardProjectStyle}>
             <div className={styles.cardDetails}>
               <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
@@ -102,8 +98,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardProjectStyle}>
             <div className={styles.cardDetails}>
               <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
@@ -125,8 +120,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardProjectStyle}>
             <div className={styles.cardDetails}>
               <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>

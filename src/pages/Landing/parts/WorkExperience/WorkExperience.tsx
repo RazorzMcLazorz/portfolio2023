@@ -6,8 +6,7 @@ export default function WorkExperience() {
       <h2 className={styles.sectionTitle}>Work Experience</h2>
 
       <div className={styles.allCards}>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardTitle}>TITLE LOREM IPSUM</div>
           <p className={styles.cardPosition}>CS Developer Position</p>
           <p className={styles.cardDescription}>
@@ -17,8 +16,7 @@ export default function WorkExperience() {
           </p>
           <div className={styles.cardDate}>Jan Date - Dec Date</div>
         </div>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardTitle}>TITLE LOREM IPSUM</div>
           <p className={styles.cardPosition}>CS Developer Position</p>
           <p className={styles.cardDescription}>
@@ -28,8 +26,7 @@ export default function WorkExperience() {
           </p>
           <div className={styles.cardDate}>Jan Date - Dec Date</div>
         </div>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardTitle}>TITLE LOREM IPSUM</div>
           <p className={styles.cardPosition}>CS Developer Position</p>
           <p className={styles.cardDescription}>
@@ -39,8 +36,7 @@ export default function WorkExperience() {
           </p>
           <div className={styles.cardDate}>Jan Date - Dec Date</div>
         </div>
-        {/* smallCard */}
-        <div className={styles.cardComponent}>
+        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
           <div className={styles.cardTitle}>TITLE LOREM IPSUM</div>
           <p className={styles.cardPosition}>CS Developer Position</p>
           <p className={styles.cardDescription}>
