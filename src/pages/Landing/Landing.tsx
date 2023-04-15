@@ -8,7 +8,7 @@ import Refferences from './parts/Refferences/Refferences'
 
 export default function Landing() {
   return (
-    <div>
+    <div className={styles.landing}>
       <Navbar />
 
       <WorkExperience />
