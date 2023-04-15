@@ -22,8 +22,18 @@
   }
 }
 
+@font-face {
+  font-family: 'Iceberg';
+  src: url('../assets/Iceberg/Iceberg-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Iceberg', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

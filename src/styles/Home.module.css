@@ -2,9 +2,6 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: 'Iceberg';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-color);
 }
 
@@ -14,6 +11,8 @@
 
 .sunsetMountains {
   position: absolute;
+  top: -64px;
+  width: 100%;
   z-index: 0;
 }
 
