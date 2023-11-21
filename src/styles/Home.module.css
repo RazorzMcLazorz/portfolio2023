@@ -11,9 +11,10 @@
 
 .sunsetMountains {
   position: absolute;
-  top: -64px;
-  width: 100%;
+  /* Had to do this because the background would go bigger then the main screen */
+  width: calc(100vw - 15px);
   z-index: 0;
+  height: fit-content;
 }
 
 .infoSection {
@@ -26,6 +27,7 @@
 .sectionTitle {
   color: white;
   font-size: 32px;
+  margin-bottom: 40px;
 }
 
 .aboutMeAdjustment {
@@ -56,6 +58,8 @@
 }
 
 .refference {
+  display: flex;
+  flex-direction: row;
   width: 500px;
   padding-top: 50px;
 }
@@ -110,12 +114,12 @@
 
 .smallCard {
   width: 350px;
-  height: 175px;
+  height: 185px;
 }
 
 .largeCard {
   width: 500px;
-  height: 300px;
+  height: 350px;
   padding: 15px;
 }
 
@@ -229,16 +233,16 @@
   display: flex;
   align-items: center;
   height: 600px;
-  font-weight: 400;
-  font-size: 36px;
+  font-weight: 600;
+  font-size: 45px;
 }
 
 .scrollDownButton,
 .downIcon {
   align-self: flex-end;
-  height: 45px;
-  width: 45px;
-  border-radius: 45%;
+  height: 63px;
+  width: 63px;
+  border-radius: 90%;
   background-color: var(--button-color);
   opacity: 0;
   animation: fadeIn 0.6s forwards;
@@ -438,6 +442,7 @@ input:checked + .slider:before {
   align-items: center;
   width: 80px;
   height: 40px;
+  margin-top: 15px;
   background-color: var(--button-color);
   border-radius: 34px;
   opacity: 0;

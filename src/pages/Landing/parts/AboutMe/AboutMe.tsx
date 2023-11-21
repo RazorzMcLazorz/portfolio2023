@@ -29,7 +29,9 @@ export default function AboutMe() {
             </p>
           </div>
 
-          <h2 className={styles.sectionTitle}>Contact Me</h2>
+          <h2 className={styles.sectionTitle} style={{ marginTop: 20 }}>
+            Contact Me
+          </h2>
 
           <div className={styles.contactLinks}>
             <a href='https://www.linkedin.com/in/nate-p-young/'>
