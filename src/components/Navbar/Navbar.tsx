@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import myLogo from '@/assets/myLogo.jpeg'
 import downIcon from '@/assets/downIcon.png'
 import { Dispatch, SetStateAction } from 'react'
+import { isMobile } from 'react-device-detect'
 
 export default function Navbar({
   setTheme,
@@ -23,7 +23,6 @@ export default function Navbar({
       rootClassList.add('light-mode')
       rootClassList.remove('dark-mode')
     }
-    console.log(event.target.checked)
   }
 
   return (
