@@ -6,6 +6,7 @@ import Languages from './parts/Languages/Languages'
 import AboutMe from './parts/AboutMe/AboutMe'
 import Refferences from './parts/Refferences/Refferences'
 import { Dispatch, SetStateAction } from 'react'
+import Resume from './parts/Resume/Resume'
 
 export default function Landing({
   setTheme,
@@ -25,6 +26,8 @@ export default function Landing({
       <Languages />
 
       <AboutMe />
+
+      <Resume />
 
       <Refferences />
 
