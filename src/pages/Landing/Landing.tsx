@@ -31,9 +31,7 @@ export default function Landing({
 
       <Refferences />
 
-      <footer style={{ color: '#fff', marginTop: 150 }}>
-        created by nathaniel young with Next.js and React.js
-      </footer>
+      <footer style={{ color: '#fff', marginTop: 150 }}>created with Next.js, v2.0.0</footer>
     </div>
   )
 }

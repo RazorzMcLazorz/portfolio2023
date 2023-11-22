@@ -34,6 +34,7 @@ export default function Navbar({
           <a href='#projects'>Projects</a>
           <a href='#languages'>Languages</a>
           <a href='#aboutme'>About Me</a>
+          <a href='#resume'>Resume</a>
           <a href='#refferences'>References</a>
         </nav>
         <div className={styles.topRight}>
