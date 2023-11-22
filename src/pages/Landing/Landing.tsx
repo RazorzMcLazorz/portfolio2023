@@ -21,7 +21,7 @@ export default function Landing() {
 
       <Refferences />
 
-      <footer>created by nathaniel young with html, js, and css</footer>
+      <footer>created by nathaniel young with Next.js and React.js</footer>
     </div>
   )
 }

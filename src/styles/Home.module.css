@@ -295,10 +295,6 @@
   cursor: default;
 }
 
-#spin {
-  position: relative;
-}
-
 .spin {
   animation: spinAround 10s linear infinite;
 }
