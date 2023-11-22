@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 import github from '@/assets/github.png'
 import link from '@/assets/link.png'
 import threeDot from '@/assets/3dot.png'
+import { ALLPROJECTS } from '@/constants/projectConstants'
 
 export default function Projects() {
   return (
@@ -10,138 +11,28 @@ export default function Projects() {
       <h2 className={styles.sectionTitle}>Projects</h2>
 
       <div className={styles.allCards}>
-        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
-          <div className={styles.cardProjectStyle}>
-            <div className={styles.cardDetails}>
-              <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
-              <p className={styles.cardDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div className={styles.cardLink}>https://projectlink.netlify.app/</div>
-            </div>
-            <div className={styles.cardIcons}>
-              <Image src={github} alt='GitHub' className={styles.cardIcon} />
-              <div className={styles.cardIcon}>
-                <Image src={link} alt='link to website' className={styles.shrinkIcon} />
-              </div>
-              <div className={styles.cardIcon}>
-                <Image src={threeDot} alt='more details' className={styles.shrinkIcon} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
-          <div className={styles.cardProjectStyle}>
-            <div className={styles.cardDetails}>
-              <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
-              <p className={styles.cardDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div className={styles.cardLink}>https://projectlink.netlify.app/</div>
-            </div>
-            <div className={styles.cardIcons}>
-              <Image src={github} alt='GitHub' className={styles.cardIcon} />
-              <div className={styles.cardIcon}>
-                <Image src={link} alt='link to website' className={styles.shrinkIcon} />
-              </div>
-              <div className={styles.cardIcon}>
-                <Image src={threeDot} alt='more details' className={styles.shrinkIcon} />
+        {ALLPROJECTS.map((project) => {
+          return (
+            <div className={`${styles.cardComponent} ${styles.smallCard}`} key={project.title}>
+              <div className={styles.cardProjectStyle}>
+                <div className={styles.cardDetails}>
+                  <p className={styles.cardTitle}>{project.title}</p>
+                  <p className={styles.cardDescription}>{project.description}</p>
+                  <div className={styles.cardLink}>{project.link}</div>
+                </div>
+                <div className={styles.cardIcons}>
+                  <Image src={github} alt='GitHub' className={styles.cardIcon} />
+                  <div className={styles.cardIcon}>
+                    <Image src={link} alt='link to website' className={styles.shrinkIcon} />
+                  </div>
+                  <div className={styles.cardIcon}>
+                    <Image src={threeDot} alt='more details' className={styles.shrinkIcon} />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
-          <div className={styles.cardProjectStyle}>
-            <div className={styles.cardDetails}>
-              <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
-              <p className={styles.cardDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div className={styles.cardLink}>https://projectlink.netlify.app/</div>
-            </div>
-            <div className={styles.cardIcons}>
-              <Image src={github} alt='GitHub' className={styles.cardIcon} />
-              <div className={styles.cardIcon}>
-                <Image src={link} alt='link to website' className={styles.shrinkIcon} />
-              </div>
-              <div className={styles.cardIcon}>
-                <Image src={threeDot} alt='more details' className={styles.shrinkIcon} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
-          <div className={styles.cardProjectStyle}>
-            <div className={styles.cardDetails}>
-              <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
-              <p className={styles.cardDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div className={styles.cardLink}>https://projectlink.netlify.app/</div>
-            </div>
-            <div className={styles.cardIcons}>
-              <Image src={github} alt='GitHub' className={styles.cardIcon} />
-              <div className={styles.cardIcon}>
-                <Image src={link} alt='link to website' className={styles.shrinkIcon} />
-              </div>
-              <div className={styles.cardIcon}>
-                <Image src={threeDot} alt='more details' className={styles.shrinkIcon} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
-          <div className={styles.cardProjectStyle}>
-            <div className={styles.cardDetails}>
-              <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
-              <p className={styles.cardDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div className={styles.cardLink}>https://projectlink.netlify.app/</div>
-            </div>
-            <div className={styles.cardIcons}>
-              <Image src={github} alt='GitHub' className={styles.cardIcon} />
-              <div className={styles.cardIcon}>
-                <Image src={link} alt='link to website' className={styles.shrinkIcon} />
-              </div>
-              <div className={styles.cardIcon}>
-                <Image src={threeDot} alt='more details' className={styles.shrinkIcon} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={`${styles.cardComponent} ${styles.smallCard}`}>
-          <div className={styles.cardProjectStyle}>
-            <div className={styles.cardDetails}>
-              <p className={styles.cardTitle}>Project Name LOREM IPSUM</p>
-              <p className={styles.cardDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div className={styles.cardLink}>https://projectlink.netlify.app/</div>
-            </div>
-            <div className={styles.cardIcons}>
-              <Image src={github} alt='GitHub' className={styles.cardIcon} />
-              <div className={styles.cardIcon}>
-                <Image src={link} alt='link to website' className={styles.shrinkIcon} />
-              </div>
-              <div className={styles.cardIcon}>
-                <Image src={threeDot} alt='more details' className={styles.shrinkIcon} />
-              </div>
-            </div>
-          </div>
-        </div>
+          )
+        })}
       </div>
     </section>
   )

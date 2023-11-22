@@ -2,6 +2,9 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import vacationBarPicture from '@/assets/vacationBarPicture.jpeg'
 
+const Details =
+  "I've been very interested in coding for a while as a hobby, I'm very passionate of this field and want to make it a reality, I have confidence in building projects you assign me because I have built personal projects such as Mad Libs which takes the input and changes state to be added in the story. another project I have my portfolio website, it uses routing to link the different components and renders them correctly when needed. a project I have in the pipeline is my BlackJack React website, it will be using the state changing, setting, and swapping components and calls functions to create a very easy to use Blackjack Game Front End Design that is extremely fun to me and very rewarding every time I complete a project, they introduced me to API's and React, along with extra languages like Python which is a very clean very easy to read language."
+
 export default function AboutMe() {
   return (
     <section className={styles.infoSection}>
@@ -12,21 +15,7 @@ export default function AboutMe() {
       <div className={styles.aboutMeAdjustment}>
         <div className={styles.contactMePart}>
           <div className={`${styles.cardComponent} ${styles.largeCard}`}>
-            <p className={styles.cardDetails}>
-              Lorem ipsum doloar sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Dictum fusce ut placerat orci nulla
-              pellentesque dignissim enim sit. Dictumst quisque sagittis purus sit amet volutpat
-              consequat. Sapien nec sagittis aliquam malesuada bibendum. Malesuada proin libero nunc
-              consequat interdum varius sit amet mattis. Id leo in vitae turpis massa sed. Sed odio
-              morbi quis commodo odio aenean sed adipiscing. Pharetra pharetra massa massa ultricies
-              mi quis hendrerit dolor magna. At quis risus sed vulputate. Urna porttitor rhoncus
-              dolor purus. Risus pretium quam vulputate dignissim suspendisse in est ante in. Semper
-              quis lectus nulla at volutpat. Integer eget aliquet nibh praesent tristique magna sit.
-              Duis ultricies lacus sed turpis tincidunt. Eu volutpat odio facilisis mauris sit amet
-              massa vitae tortor. Non odio euismod lacinia at quis risus sed vulputate. Faucibus
-              pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Sed ullamcorper
-              morbi tincidunt ornare massa eget egestas purus viverra.
-            </p>
+            <p className={styles.cardDetails}>{Details}</p>
           </div>
 
           <h2 className={styles.sectionTitle} style={{ marginTop: 20 }}>
