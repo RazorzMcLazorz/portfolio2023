@@ -19,12 +19,21 @@ export default function Projects() {
                   <p className={styles.cardTitle}>{project.title}</p>
                   <p className={styles.cardDescription}>{project.description}</p>
                   <div className={styles.cardLink}>{project.link}</div>
+                  {project.private && <div className={styles.cardLink}>Privated Repo</div>}
                 </div>
                 <div className={styles.cardIcons}>
-                  <Image src={github} alt='GitHub' className={styles.cardIcon} />
-                  <div className={styles.cardIcon}>
-                    <Image src={link} alt='link to website' className={styles.shrinkIcon} />
-                  </div>
+                  {project.github && !project.private && (
+                    <a href={project.github}>
+                      <Image src={github} alt='GitHub' className={styles.cardIcon} />
+                    </a>
+                  )}
+                  {project.link && (
+                    <div className={styles.cardIcon}>
+                      <a href={project.link}>
+                        <Image src={link} alt='link to website' className={styles.shrinkIcon} />
+                      </a>
+                    </div>
+                  )}
                   <div className={styles.cardIcon}>
                     <Image src={threeDot} alt='more details' className={styles.shrinkIcon} />
                   </div>
