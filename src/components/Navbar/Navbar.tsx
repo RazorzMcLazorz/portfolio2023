@@ -3,27 +3,28 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import myLogo from '@/assets/myLogo.jpeg'
 import downIcon from '@/assets/downIcon.png'
-import { useEffect, useState } from 'react'
+import { Dispatch, SetStateAction } from 'react'
 
-export default function Navbar() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark')
-
+export default function Navbar({
+  setTheme,
+  theme,
+}: {
+  setTheme: Dispatch<SetStateAction<'light-mode' | 'dark-mode'>>
+  theme: string
+}) {
   const handleThemeChange = (event: any) => {
+    const rootClassList = document.documentElement.classList
     if (!event.target.checked) {
-      setTheme('dark')
-      document.documentElement.classList.toggle('dark-mode')
+      setTheme('dark-mode')
+      rootClassList.add('dark-mode')
+      rootClassList.remove('light-mode')
     } else {
-      setTheme('light')
-      document.documentElement.classList.toggle('light-mode')
+      setTheme('light-mode')
+      rootClassList.add('light-mode')
+      rootClassList.remove('dark-mode')
     }
     console.log(event.target.checked)
   }
-
-  useEffect(() => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
-      setTheme('dark')
-    else setTheme('light')
-  }, [])
 
   return (
     <header className={styles.header}>
@@ -33,7 +34,7 @@ export default function Navbar() {
           <a href='#projects'>Projects</a>
           <a href='#languages'>Languages</a>
           <a href='#aboutme'>About Me</a>
-          <a href='#refferences'>Refferences</a>
+          <a href='#refferences'>References</a>
         </nav>
         <div className={styles.topRight}>
           <Image src={myLogo} alt='myLogo' className={styles.myLogo} />
@@ -41,7 +42,7 @@ export default function Navbar() {
             <input
               type='checkbox'
               id='themeChange'
-              checked={theme === 'light'}
+              checked={theme === 'light-mode'}
               onChange={handleThemeChange}
             />
             <span className={styles.slider}></span>

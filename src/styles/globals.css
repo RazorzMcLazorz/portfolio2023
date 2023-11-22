@@ -1,29 +1,25 @@
 :root {
+  --bg-color: #550701;
+  --upper-card-layer: #be2501;
+  --lower-card-layer: #911201;
+  --button-color: #f07601;
+  --nav-text: #550701;
+}
+
+.dark-mode {
+  --bg-color: #550701;
+  --upper-card-layer: #be2501;
+  --lower-card-layer: #911201;
+  --button-color: #f07601;
+  --nav-text: #550701;
+}
+
+.light-mode {
   --bg-color: #062b79;
   --upper-card-layer: #16498a;
   --lower-card-layer: #5995b7;
   --button-color: #9cdbff;
   --nav-text: #062b79;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #550701;
-    --upper-card-layer: #be2501;
-    --lower-card-layer: #911201;
-    --button-color: #f07601;
-    --nav-text: #550701;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-color: #062b79;
-    --upper-card-layer: #16498a;
-    --lower-card-layer: #5995b7;
-    --button-color: #9cdbff;
-    --nav-text: #062b79;
-  }
 }
 
 @font-face {
